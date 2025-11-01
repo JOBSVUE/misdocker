@@ -38,7 +38,7 @@ services:
       start_period: 5s
       start_interval: 5s
     volumes:
-      - cache_data:/data:Z
+      - misp_cache_data:/data:Z
 
   db:
     # We use MariaDB because it supports ARM and has the expected collations
