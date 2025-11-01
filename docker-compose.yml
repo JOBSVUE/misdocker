@@ -194,7 +194,7 @@ services:
       - "REDIS_PASSWORD=${REDIS_PASSWORD:-redispassword}"
       - "ENABLE_REDIS_EMPTY_PASSWORD=${ENABLE_REDIS_EMPTY_PASSWORD:-false}"
       # debug setting 
-      - "DEBUG=${DEBUG}"
+      - "DEBUG=${DEBUG:-false}"
       # SMTP setting
       - "SMTP_FQDN=${SMTP_FQDN}"
       # NGINX settings
@@ -278,5 +278,5 @@ services:
       
 
 volumes:
-    mysql_data:
-    cache_data:
+    misp_mysql_data:
+    misp_cache_data:
